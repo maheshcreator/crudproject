@@ -1,0 +1,25 @@
+
+<div class="container" style="max-width:400px">
+
+    <h2>
+        EDIT ISSUE
+    </h2>
+   <form (ngSubmit)="updateIssue(ulist.id,ulist)">
+    <p>
+        <label>
+            TITLE
+        </label>
+        <input type="text" name="issue" [(ngModel)]="ulist.title" class="form-control">
+    </p>
+    <p>
+        <label>
+            DESCRIPTION
+        </label>
+        <input type="text" name="description" [(ngModel)]="ulist.description" class="form-control">
+    </p>
+    <p>
+<input type="submit" value="update" class="btn btn-primary">&nbsp;
+<input type="button" value="Back" class="btn btn-success" roterLink="/view">
+</p> 
+   </form>
+</div> 

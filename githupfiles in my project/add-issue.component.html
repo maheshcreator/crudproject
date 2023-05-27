@@ -1,0 +1,21 @@
+<div class="container" style="max-width:400px">
+<h2>add-issue</h2>
+<form (ngSubmit)="addIssue()">
+<P>
+    <LABEL>
+        TITLE
+    </LABEL>
+    <input type="text" name="title" [(ngModel)]="userobj.title" class="form-control">
+</P>
+<p>
+    <label>
+        Description
+    </label>
+<input  type="text" name="description" [(ngModel)]="userobj.description" class="form-control">
+</p>
+<p>
+    <input type="submit" value="save" class="btn btn-primary">&nbsp;
+    <input type="button" value="issue list" class="btn btn-success" routerLink="/view">
+</p>
+</form>
+</div>

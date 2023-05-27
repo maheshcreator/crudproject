@@ -1,0 +1,19 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+input,tr{
+  border:1px solid black;
+}
+h2{
+  text-align:center;
+  color:green;
+  margin-top: 50 px;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+
+<div class="container" >
+<h2>
+VIEWISSUE
+</h2>
+<input type="button" value="addIssue" class="btn btn-dark" routerLink="/add'">
+<table class="table">
+<thead>
+    <tr>
+       <th>title</th>
+       <th>description</th> 
+    </tr>
+    
+</thead>
+<tbody>
+    <tr *ngFor="let u of ulist ">
+     <td>
+        {{u.title}}
+    </td>
+        <td>
+        {{u.description}} 
+       </td>
+       <td>
+        <span class="btn  btn-warning" routerLink="/edit/{{u.id}}">Edit</span>&nbsp;
+        <span class="btn btn-danger" (click)="removeIssue(u.id)">Delete</span>
+       </td>
+    </tr>
+</tbody>
+</table> 
+</div>
